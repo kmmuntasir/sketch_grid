@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>Sketch Grid</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <body>
+    	<div class="container">
+            <div class="content">
+                <div class="main">
+                    <table class="grid" cellpadding="0" cellspacing="0">
+                        <tr id="tr_1">
+                            <td class="td_1"><span style="display:block;">1</span></td>
+                        </tr>
+                        <tr id="tr_2">
+                            <td class="td_1"><span style="display:block;">2</span></td>
+                        </tr>
+                        <tr id="tr_3">
+                            <td class="td_1"><span style="display:block;">3</span></td>
+                        </tr>
+                    </table>
+                </div> <!-- Main End -->
+                <div class="image">
+                    <img class="sketch_img" src="img.jpg" alt="sketch_img" />
+                </div> <!-- Image End -->
+            </div> <!-- Content End -->
+            <div class="sidebar">
+                <section>
+                    <h4>Activate/Deactivate Numbering</h4>
+                    <hr />
+                    <button id="grid_number">Hide</button>
+                </section>
+                <section>
+                	<h4>Image Control</h4>
+                    <hr />
+                    <p>Size</p>
+                    <button id="image_inc">Increase</button>
+                    <button id="image_dec">Decrease</button>
+                    <p>Size Change Amount: <span id="change"></span></p>
+                    <button id="change_inc">Increase</button>
+                    <button id="change_dec">Decrease</button>
+                </section>
+                <section>
+                	<h4>Grid Control</h4>
+                    <hr />
+                    <p>Row</p>
+                    <button id="row_inc">Increase</button>
+                    <button id="row_dec">Decrease</button>
+                    <p>Column</p>
+                    <button id="col_inc">Increase</button>
+                    <button id="col_dec">Decrease</button>
+                </section>
+                <section>
+                    <h4>Grid Size Control</h4>
+                    <hr />
+                    <p>Size</p>
+                    <button id="size_inc">Increase</button>
+                    <button id="size_dec">Decrease</button>
+                    <p>Size Change Amount: <span id="size_change"></span></p>
+                    <button id="size_change_inc">Increase</button>
+                    <button id="size_change_dec">Decrease</button>
+                </section>
+                <section>
+                	<h4>Image Width: <span id="value"></span></h4>
+                </section>
+            </div> <!-- Sidebar End -->
+            <div class="clear"></div>
+            <p></p>
+        </div> <!-- Container End -->
+    	<script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="sketch.js"></script>
+    </body>
+</html>
